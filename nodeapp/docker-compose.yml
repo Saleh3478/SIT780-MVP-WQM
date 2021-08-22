@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  dockerwebapp:
+    image: dockerwebapp
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
+    volumes: 
+      - .:/home/nodeapp 
+networks:
+  default:
+    external: true
+    name: app-network

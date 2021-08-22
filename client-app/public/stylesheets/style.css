@@ -1,0 +1,21 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+span.name { 
+  display: inline-block;
+  margin: 10px;
+  width: 200px;;
+}
+
+span.name a {
+  color:blue; 
+  text-decoration: none;
+}
+span.city a {
+  color:green; 
+}

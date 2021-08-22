@@ -1,0 +1,39 @@
+doctype html
+html
+    head
+    title #{title}       
+    script(src='/libs/jquery/dist/jquery.min.js') 
+    script(src='/libs/bootstrap/dist/js/bootstrap.min.js')    
+
+    link(rel='stylesheet' href='https://naver.github.io/billboard.js/release/latest/dist/billboard.css')
+    script(src='https://d3js.org/d3.v4.min.js')
+    script(src='https://naver.github.io/billboard.js/release/latest/dist/billboard.js')
+    
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/libs/bootstrap/dist/css/bootstrap.min.css')
+      
+    
+    body       
+      div.navbar.navbar-inverse.navbar-fixed-top
+        div.navbar-inner
+          div.container-fluid
+            a(data-toggle="collapse",data-target=".nav-collapse").btn.btn-navbar
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href='/').brand Home          
+      div.container-fluid
+        div.row-fluid
+          div.span3
+            div.well.sidebar-nav
+              ul.nav.nav-list
+                li.nav-header Main Menu
+                li.active
+                  a(href='/') Locations
+                li
+                  a(href='/showreadings') Readings
+                li
+                  a(href='/showcharts') Charts
+        block content    
+

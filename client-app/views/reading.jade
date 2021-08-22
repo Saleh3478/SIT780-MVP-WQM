@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    h1= title   
+    div(id="readings")
+    a(href="/collectreadings" class="btn btn-primary btn-lg btn-block" tabindex="-1" role="button") Collect Readings   
+    table(class="table")
+        thead(class="table-dark")
+            tr 
+                th= "Location" 
+                th= "Total Chlorine (mg/L)" 
+                th= "Fluoride (mg/L)" 
+                th= "pH (pH Units)" 
+                th= "Total Dissolved Solids (mg/L)" 
+                th= "Temperature (degrees C)" 
+                th= "Water Quality (%)" 
+        tbody
+            each reading in data
+                
+                tr 
+                    td
+                      span.name 
+                        a(href="#")= reading.location 
+                    td= reading.totalChlorine
+                    td= reading.totalChlorine  
+                    td= reading.fluoride  
+                    td= reading.solids  
+                    td= reading.temperature 
+                    td= reading.wquality
+                        % 
+                       
+                    
+    
+    

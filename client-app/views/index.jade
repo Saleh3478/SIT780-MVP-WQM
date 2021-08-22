@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title 
+  alert(title) 
+  div(id="locations")
+  p
+      span.name= "Location"
+      span= "City"
+  each loc in data
+    p
+      span.name 
+        a(href="#")= loc.name 
+      span.city
+        a(href="#")= loc.city
