@@ -10,6 +10,6 @@ block content
   each loc in data
     p
       span.name 
-        a(href="#")= loc.name 
+        a(href="/showreadings?location=#{loc.name}")= loc.name 
       span.city
         a(href="#")= loc.city
