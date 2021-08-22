@@ -13,8 +13,8 @@ var chartRouter = require('./routes/chartviewer');
 var mongo = require('mongodb');
 
 //var url = 'mongodb://mongo:27017/wqmdb'
-//var url = 'mongodb://admin:admin@172.21.0.2:27017/wqmdb'
-var url = 'mongodb://admin:admin@localhost:27017/wqmdb'
+var url = 'mongodb://admin:admin@172.21.0.2:27017/wqmdb'
+//var url = 'mongodb://admin:admin@localhost:27017/wqmdb'
 var MongoClient = require('mongodb').MongoClient;
 MongoClient.connect(url, function(err, client) {
     const db = client.db("wqmdb")

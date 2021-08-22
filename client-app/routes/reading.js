@@ -5,8 +5,8 @@ var express = require('express');
 
 var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
-//var url = 'mongodb://admin:admin@172.21.0.2:27017/wqmdb'
-var url = 'mongodb://admin:admin@localhost:27017/wqmdb'
+var url = 'mongodb://admin:admin@172.21.0.2:27017/wqmdb'
+//var url = 'mongodb://admin:admin@localhost:27017/wqmdb'
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
